@@ -91,9 +91,9 @@ public class App extends Application {
         circle.setRadius(50);
         circle.setFill(Color.ORANGE);
 
-        String imagePath = "/assets/images/icon.png";
+        String imagePath = "file:/home/phantom/Desktop/Java/JavaFX-Learning/assets/images/icon.png";
 
-        Image image = new Image(getClass().getResourceAsStream(imagePath));
+        Image image = new Image(imagePath);
         ImageView imageView = new ImageView(image);
         imageView.setX(400);
         imageView.setY(400);
@@ -113,7 +113,7 @@ public class App extends Application {
     }
 
     public static void main(String[] args) {
-        launch();
+        launch(args);
     }
 
 }
