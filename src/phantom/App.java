@@ -30,7 +30,7 @@ public class App extends Application {
         // Group root = new Group();
         // Scene scene = new Scene(root, Color.gray(0));
 
-        // String iconPath = "/images/icon.png";
+        // String iconPath = "/assets/images/icon.png";
         // Image icon = new Image(getClass().getResourceAsStream(iconPath));
         // stage.getIcons().add(icon);
         // stage.setTitle("Phantom Testing");
@@ -91,7 +91,7 @@ public class App extends Application {
         circle.setRadius(50);
         circle.setFill(Color.ORANGE);
 
-        String imagePath = "/images/icon.png";
+        String imagePath = "/assets/images/icon.png";
 
         Image image = new Image(getClass().getResourceAsStream(imagePath));
         ImageView imageView = new ImageView(image);
