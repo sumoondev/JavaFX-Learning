@@ -11,6 +11,7 @@
 .mtj.tmp/
 
 # Package Files #
+lib/*
 *.jar
 *.war
 *.nar
@@ -23,12 +24,8 @@
 hs_err_pid*
 replay_pid*
 
-# vscode profile
-.vscode
+# # vscode profile
+# .vscode
 
-# Intellij
-.idea
-
-# target
-/target/
-addressbook.json
+# # Intellij
+# .idea
