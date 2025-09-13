@@ -111,14 +111,44 @@ public class App extends Application {
             // stage.show();
         }
         
-        try {
-            Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
-            Scene scene = new Scene(root);
-            // scene.getStylesheets().add(getClass().getResource("application.css"));
-            stage.setScene(scene);
-            stage.show();
-        } catch(Exception e) {
-            e.printStackTrace();
+        {// work 3
+
+            try {
+
+                    Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
+                    Scene scene = new Scene(root);
+                    // scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+                    
+                    // for more than one scene
+                    String css = this.getClass().getResource("application.css").toExternalForm();
+                    scene.getStylesheets().add(css);
+                    
+                    String imagePath = "icon.png";
+                    Image icon = new Image(getClass().getResourceAsStream(imagePath));
+                    stage.getIcons().add(icon);
+                    stage.setTitle("JavaFX Learning");
+                    stage.setScene(scene);
+                    stage.show();
+
+                } catch(Exception e) {
+
+                    e.printStackTrace();
+
+                }
+        }
+    
+        {// work 4
+
+            try {
+                
+                Parent root = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
+                Scene scene = new Scene(root);
+                stage.setScene(scene);
+                stage.show();
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
