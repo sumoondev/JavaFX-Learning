@@ -53,6 +53,8 @@ public class Scene1Controller {
         Scene2Controller scene2Controller = loader.getController();
         scene2Controller.displayName(username);
 
+        scene2Controller.imageImage(username+".png");
+
         // root = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
