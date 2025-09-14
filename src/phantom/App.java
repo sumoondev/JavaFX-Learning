@@ -113,43 +113,42 @@ public class App extends Application {
         
         {// work 3
 
-            try {
+            // try {
 
-                    Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
-                    Scene scene = new Scene(root);
-                    // scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+            //         Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
+            //         Scene scene = new Scene(root);
+            //         // scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
                     
-                    // for more than one scene
-                    String css = this.getClass().getResource("application.css").toExternalForm();
-                    scene.getStylesheets().add(css);
+            //         // for more than one scene
+            //         String css = this.getClass().getResource("application.css").toExternalForm();
+            //         scene.getStylesheets().add(css);
                     
-                    String imagePath = "icon.png";
-                    Image icon = new Image(getClass().getResourceAsStream(imagePath));
-                    stage.getIcons().add(icon);
-                    stage.setTitle("JavaFX Learning");
-                    stage.setScene(scene);
-                    stage.show();
+            //         String imagePath = "icon.png";
+            //         Image icon = new Image(getClass().getResourceAsStream(imagePath));
+            //         stage.getIcons().add(icon);
+            //         stage.setTitle("JavaFX Learning");
+            //         stage.setScene(scene);
+            //         stage.show();
 
-                } catch(Exception e) {
+            //     } catch(Exception e) {
 
-                    e.printStackTrace();
+            //         e.printStackTrace();
 
-                }
+            //     }
         }
     
-        {// work 4
-
-            try {
+        try {
                 
-                Parent root = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
-                Scene scene = new Scene(root);
-                stage.setScene(scene);
-                stage.show();
+            Parent root = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
+            Scene scene = new Scene(root);
+            stage.setTitle("Login Page");
+            stage.setScene(scene);
+            stage.show();
 
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+    
     }
 
     public static void main(String[] args) {
