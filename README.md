@@ -1,7 +1,6 @@
 # JavaFX-Learning
 
-[![JavaFX Version](https://img.shields.io/badge/JavaFX-13-blue.svg)](https://openjfx.io/)  
-[![Maven](https://img.shields.io/badge/Maven-Compiler%20v11-red.svg)](https://maven.apache.org/)  
+[![JavaFX Version](https://img.shields.io/badge/JavaFX-13-blue.svg)](https://openjfx.io/)   
 [![Version](https://img.shields.io/badge/Version-0.0.1-orange.svg)]()
 
 A hands-on playground repository for learning and experimenting with JavaFX. This project uses Maven for build management and is set up in VS Code.
@@ -51,7 +50,7 @@ These instructions will help you get a copy of the project up and running on you
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/PhantomBenz/JavaFX-Learning.git
+   git clone https://github.com/sumoondev/JavaFX-Learning.git
    cd JavaFX-Learning
    ```
 
@@ -68,13 +67,7 @@ These instructions will help you get a copy of the project up and running on you
 
 ## Running the App
 
-You can run the application directly from Maven:
-
-```bash
-mvn javafx:run -f pom.xml
-```
-
-Or, in VS Code:
+In VS Code:
 
 1. Open the project folder.
 2. Use the **Run** panel or right-click `App.java` ➜ **Run Java**.
@@ -86,12 +79,14 @@ Or, in VS Code:
 ```
 JavaFX-Learning/
 ├── src/
-│   ├── main/
-│   │   ├── java/com/phantom/
-│   │   │   └── App.java      # Entry point, sets up the primary stage
-│   │   └── resources/images/
-│   │       └── icon.png          # Window icon
-├── pom.xml                       # Maven build file
+│   └── phantom/
+│       ├── App.java             # Entry point, sets up the primary stage
+│       ├── abcController.java   # For controlling Scenes
+│       ├── *.fxml
+│       └── resources/images/
+│           └── *.png            # Any kind of image files
+├── .gitignore
+├── LICENSE
 └── README.md
 ```
 
